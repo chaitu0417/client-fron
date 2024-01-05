@@ -1,0 +1,107 @@
+/* booking.css */
+
+.booking-table-container {
+    margin: 20px;
+}
+
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+.booking-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+.booking-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.booking-table tbody tr:nth-child(odd) {
+    background-color: #e5e5e5;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table thead th {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        float: left;
+        text-transform: uppercase;
+    }
+}
+
+/* Filter and Dropdown Styling */
+.filter-container select,
+.filter-container input[type="text"],
+.filter-container button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.filter-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

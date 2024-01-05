@@ -1,0 +1,47 @@
+.dashboard-container {
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-container {
+    padding: 20px;
+}
+
+.management-links {
+    margin-bottom: 20px;
+}
+
+.doctor-count,
+.bookings-chart,
+.total-earnings,
+.earnings-by-doctor-chart,
+.top-earning-doctors-chart,
+.service-categories-chart,
+.earnings-by-service-category-chart {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Remaining section styles go here */
